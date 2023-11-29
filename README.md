@@ -1,6 +1,5 @@
-WELCOME TO THE GITLAB VERSION OF SLEEPY CAT!
-made for people in schools to have fun and do other stuff 
-sorry if updates take way to long most coding is done durring school.
-make sure to check out every game that we forked. they are all in our group go check them out 
-all licenses and ect is in the license and contributing.
-XMAS UPDATE OUT NOW! (nov 29)
+WELCOME TO THE GITLAB VERSION OF SLEEPY CAT! MERRY XMAS!<br>
+made for people in schools to have fun and do other stuff<br>
+all licenses and ect is in the license and contributing folder<br>
+list of all recent major updates<br>
+XMAS UPDATE OUT NOW! (nov 29)<br>
