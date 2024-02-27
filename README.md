@@ -9,4 +9,4 @@ jan 1/7/2024 i know that christmas is "over" but on sleepycat it will continue t
 also i know i havent done to much work to sleepycat but i will resume updates soon thanks for using sleepy cat!<br>
 small bugs and fixes (jan 1/12/2024) not much but fixxed some general issues and other stuff<br>
 added mc 1.3 and 1.5.2 on 1/29/2024 yes im super lazy and just added this easy stuff sorry<br>
-2/27/2024 sorry for being so eepy. the snow is now gone and the offical renpyweb is being tested as of now 
+2/27/2024 sorry for being so eepy. the snow is now gone.
