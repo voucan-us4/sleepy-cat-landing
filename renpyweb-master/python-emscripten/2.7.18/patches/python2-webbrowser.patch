@@ -1,0 +1,41 @@
+Description: Support opening new browser tabs from Python/Emscripten
+
+From: Tom Rothamel <tom@rothamel.us>
+
+Forwarded: no
+Author: Sylvain Beucler <beuc@beuc.net>
+Last-Update: 2018-10-28
+---
+ Lib/webbrowser.py |   12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+diff --git a/Lib/webbrowser.py b/Lib/webbrowser.py
+index 15eeb66..d4ac00e 100755
+--- a/Lib/webbrowser.py
++++ b/Lib/webbrowser.py
+@@ -6,7 +6,7 @@ import os
+ import shlex
+ import sys
+ import stat
+-import subprocess
++#import subprocess
+ import time
+ 
+ __all__ = ["Error", "open", "open_new", "open_new_tab", "get", "register"]
+@@ -656,6 +656,16 @@ if sys.platform[:3] == "os2" and _iscommand("netscape"):
+              GenericBrowser(["start", "netscape", "%s"]), -1)
+ 
+ 
++class EmscriptenBrowser(BaseBrowser):
++    def open(self, url, new=0, autoraise=True):
++        import emscripten
++        emscripten.run_script("""try { window.open('%s', '_blank'); } catch (e) { console.log(e); }""" % url.replace("'", "%27"))
++        return True
++
++if sys.platform == 'emscripten':
++    register("emscripten", None, EmscriptenBrowser())
++
++
+ # OK, now that we know what the default preference orders for each
+ # platform are, allow user to override them with the BROWSER variable.
+ if "BROWSER" in os.environ:

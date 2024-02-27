@@ -1,0 +1,11 @@
+build
+cache
+install
+pygame-example/main.py
+*.pyo
+*~
+toolchain
+/renpy
+/pygame_sdl2
+/emsdk/
+inittab.c
