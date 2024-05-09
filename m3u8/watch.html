@@ -4,14 +4,14 @@
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
-    hls.loadSource('http://streetcatpull.hellobike.com/live/4584985755015398729_0.m3u8');
+    hls.loadSource('https://sleepy-cat-1.gitlab.io/weblanding/m3u8/4584985755015398729_0.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
         video.play();
     });
 }
 else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://streetcatpull.hellobike.com/live/4584985755015398729_0.m3u8';
+    video.src = 'https://sleepy-cat-1.gitlab.io/weblanding/m3u8/4584985755015398729_0.m3u8';
     video.addEventListener('canplay',function() {
         video.play();
     });
