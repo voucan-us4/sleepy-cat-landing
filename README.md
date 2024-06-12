@@ -12,8 +12,8 @@ added mc 1.3 and 1.5.2 on 1/29/2024 yes im super lazy and just added this easy s
 2/27/2024 sorry for being so eepy. the snow is now gone.
 
 
-6/12/2024 dev has restarted heres a summer dev road map
-bug fixed : current
-more games : in Queue
-more bug fixed : in Queue
-random shit no one will care about : in Queue
+6/12/2024 dev has restarted heres a summer dev road map<br>
+bug fixed : current<br>
+more games : in Queue<br>
+more bug fixed : in Queue<br>
+random shit no one will care about : in Queue<br>
