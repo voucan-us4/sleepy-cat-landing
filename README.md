@@ -10,3 +10,10 @@ also i know i havent done to much work to sleepycat but i will resume updates so
 small bugs and fixes (jan 1/12/2024) not much but fixxed some general issues and other stuff<br>
 added mc 1.3 and 1.5.2 on 1/29/2024 yes im super lazy and just added this easy stuff sorry<br>
 2/27/2024 sorry for being so eepy. the snow is now gone.
+
+
+6/12/2024 dev has restarted heres a summer dev road map
+bug fixed : current
+more games : in Queue
+more bug fixed : in Queue
+random shit no one will care about : in Queue
