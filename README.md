@@ -14,6 +14,6 @@ added mc 1.3 and 1.5.2 on 1/29/2024 yes im super lazy and just added this easy s
 
 6/12/2024 dev has restarted heres a summer dev road map<br>
 bug fixed : Done (%100)<br>
-more games : current (%0)<br>
+more games : current (%10)<br>
 more bug fixed : in Queue<br>
-random shit no one will care about : In Queue<br>
+random shit no one will care about : (this entire website 100%) <br>
