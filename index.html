@@ -188,17 +188,109 @@
           <div class="h-100 p-5 text-bg-dark rounded-3">
             <h2>Coming soon... </p>
             <p> <img src="cat pictures/get me a drink bar.png" alt="get me a drink"></p>
-            <a href="placeholder.html"><!--this content is coming soon--></a><br> 
+            <a href="placeholder.html"> </a><br> 
   </div>
 </div>
     <footer class="pt-3 mt-4 text-body-secondary border-top">
       &copy; 2024 sleepy cat. <a href="https://discord.gg/A5wjzetRd3">join our updates discord </a>
       <i class="bi bi-heart-fill"></i>
       <!--when editing the code dont forget to remove any extras added onto the url to stop the hit counter from going up (PS)-->
-      <center><a href='http://www.freevisitorcounters.com'>at Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c0cb8024b204a2a7df583454e36f7914afaf1173'></script> <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1208400/t/0"></script>
+      <center><a href='http://www.freevisitorcounters.com'>at Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c0cb8024b204a2a7df583454e36f7914afaf1173'></script> <script type="text/javascript" src="22https://www.freevisitorcounters.com/en/home/counter/1208400/t/0"></script>
       </footer>
   </div>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
+<style>
+  /* Customizable snowflake styling */
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-shake;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .snowflake .inner {
+    animation-duration: 10s;
+    animation-name: snowflakes-fall;
+    animation-timing-function: linear;
+  }
+  
+  .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+  
+  /* Style for snowflakes when they are hidden */
+  .snowflake.hidden {
+    display: none;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+  </div>
+  
+  <script>
+    const snowflakes = document.querySelectorAll('.snowflake');
+    const today = new Date();
+    const december1 = new Date(today.getFullYear(), 11, 1); // December 1st
+    const february12 = new Date(today.getFullYear(), 2, 12); // february 12th
+  
+    if (today >= december1 && today <= june12) {
+      snowflakes.forEach(snowflake => {
+        snowflake.classList.remove('hidden');
+      });
+    } else {
+      snowflakes.forEach(snowflake => {
+        snowflake.classList.add('hidden');
+      });
+    }
+  </script>
+  
+  </body>
+  </html>
