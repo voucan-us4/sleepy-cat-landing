@@ -6,9 +6,9 @@ XMAS UPDATE OUT NOW! (nov 29)<br>
 MAIN XMAS UPDATE (nov30)<br>
 XMAS UPDATE PART 2 (DEC 6)<br>
 
-6/12/2024 dev has restarted heres a summer dev road map<br>
+current plan for 2024 roadmap
 bug fixed : Done (%100)<br>
-more games : current (%50)<br>
+more games : current (%60)<br>
 more bug fixed : (%50) <br>
 general improvements : (%50)<br>
 random shit no one will care about : (this entire website 100%) <br>
