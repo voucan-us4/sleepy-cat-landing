@@ -1,0 +1,31 @@
+name: GitLab to GitHub Sync
+
+on:
+  push:
+    branches:
+      - main # Trigger on pushes to the 'main' branch of the GitHub repo
+      # Add other branches if needed
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repo (for initial commit if empty)
+        uses: actions/checkout@v3
+
+      - name: Pull from GitLab
+        uses: actions/checkout@v3
+        with:
+          repository: 'sleepy-cat-1/weblanding' # Your GitLab repo
+          token: ${{ secrets.GITLAB_TOKEN }} # Your GitLab Personal Access Token
+          path: gitlab-repo # Checkout to a subdirectory to avoid conflicts
+
+      - name: Copy GitLab files to GitHub repo
+        run: rsync -av --delete gitlab-repo/* ./  # Sync and delete extra files
+
+      - name: Commit and Push to GitHub
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Sync from GitLab"
+          branch: main # Push to the 'main' branch of the GitHub repo
+          # Add other options like commit_author, etc. if needed
