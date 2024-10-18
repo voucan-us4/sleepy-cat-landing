@@ -1,31 +1,36 @@
-name: GitLab to GitHub Sync
+name: GitLab to GitHub Sync (with Submodules)
 
 on:
   push:
     branches:
-      - main # Trigger on pushes to the 'main' branch of the GitHub repo
-      # Add other branches if needed
+      - main
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub Repo (for initial commit if empty)
+      - name: Checkout GitHub Repo
         uses: actions/checkout@v3
 
-      - name: Pull from GitLab
+      - name: Pull from GitLab (with submodules)
         uses: actions/checkout@v3
         with:
-          repository: 'sleepy-cat-1/weblanding' # Your GitLab repo
-          token: ${{ secrets.GITLAB_TOKEN }} # Your GitLab Personal Access Token
-          path: gitlab-repo # Checkout to a subdirectory to avoid conflicts
+          repository: 'sleepy-cat-1/weblanding'
+          token: ${{ secrets.GITLAB_TOKEN }}
+          submodules: true # This is crucial for handling submodules
+          fetch-depth: 0 # Fetch all history
+
+      - name: Install Git (just in case)
+        run: sudo apt-get update && sudo apt-get install -y git
+
+      - name: Update Submodules
+        run: git submodule update --init --recursive
 
       - name: Copy GitLab files to GitHub repo
-        run: rsync -av --delete gitlab-repo/* ./  # Sync and delete extra files
+        run: rsync -av --delete gitlab-repo/* ./
 
       - name: Commit and Push to GitHub
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Sync from GitLab"
-          branch: main # Push to the 'main' branch of the GitHub repo
-          # Add other options like commit_author, etc. if needed
+          commit_message: "Sync from GitLab (with submodules)"
+          branch: main
