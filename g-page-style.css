@@ -1,5 +1,5 @@
-.col-md-6,.p-5 .mb-4,.rounded-3{
-    animation-duration: 0.5s;
+p,br,h2,h3 {
+    animation-duration: 1s;
     animation-name: slidein;
   }
   
@@ -14,3 +14,4 @@
       scale: 100% 1;
     }
   }
+  /*despite what it may tell you translate and scale are supported by browsers*/ 
