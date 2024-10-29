@@ -17,8 +17,8 @@ jobs:
         with:
           repository: 'sleepy-cat-1/weblanding'
           token: ${{ secrets.GITLAB_TOKEN }}
-          submodules: true # This is crucial for handling submodules
-          fetch-depth: 0 # Fetch all history
+          submodules: true 
+          fetch-depth: 0 
 
       - name: Install Git (just in case)
         run: sudo apt-get update && sudo apt-get install -y git
